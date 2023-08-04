@@ -1,35 +1,24 @@
-#include <iostream>
-#include <vector>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main(){
-	
-	int n,m,mi,k;
-	int p;
-	cin >> n;
-	cin >> m;
-	vector<int>v;
+	int n, k, c;
+	cin >> n >> k;
+	int array[n];
+	int r = 0;
 	
 	for(int i = 0; i < n; i++){
-		cin >> mi;
-		v.push_back(mi);
+		cin >> c;
+		array[i] = c;
 	}
-	p = v[m-1];
-	for(int i = 0; i < n; i++){
-		if(p == 0){
-			k = 0;
-			break;
-		}
-		else if(v[i] >= p){
-			k +=1;
+	for(int i = 0; i < n; i ++){
+		if(array[i] >= array[k-1] && array[i] > 0){
+			r +=1;
 		}else{
 			continue;
 		}
 	}
-	
-	cout << k;
-	
-	
+	cout << r;
 	
 	return 0;
 }
