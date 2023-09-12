@@ -8,7 +8,7 @@ int main(){
 	string w;
 	cin >> w;
 	set<char> d; //No permite que hayan elementos repetidos, por lo tanto
-	//cuando agregamos elementos en el for de abajo, solo se agregan los que no est·n repetidos
+	//cuando agregamos elementos en el for de abajo, solo se agregan los que no est√°n repetidos
 	for(char c : w){
 		d.insert(c);
 	}
