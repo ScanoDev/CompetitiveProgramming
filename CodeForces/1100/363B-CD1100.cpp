@@ -1,4 +1,4 @@
-// tECHNIQUE used for this problem: Sliding windOW
+// Technique used for this problem: Sliding windOW
 
 #include <iostream>
 using namespace std;
