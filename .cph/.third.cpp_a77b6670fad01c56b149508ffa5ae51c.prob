@@ -1,0 +1,1 @@
+{"name":"Local: third","url":"c:\\Users\\linam\\OneDrive\\Escritorio\\sebas\\codigos\\third.cpp","tests":[{"id":1722635543756,"input":"8\n1 5\n2 5\n3 5\n2 1\n7 17\n4 14\n1 1000000000\n1000000000 1\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\linam\\OneDrive\\Escritorio\\sebas\\codigos\\third.cpp","group":"local","local":true}
