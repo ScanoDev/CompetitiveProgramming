@@ -1,30 +1,30 @@
 #include <iostream>
-#include <vector>
+#include <map>
 using namespace std;
 
 int main(){
+
     int n,m;
+    string s1,s2;
     cin >> n >> m;
-    vector<pair<string, string>> m_list;
-    vector<string> n_list(n);
-
+    map<string, string> mp;
     for(int i = 0; i < m; i++){
-        string a, b;
-        cin >> a >> b;
-        m_list.push_back(make_pair(a,b));
+        cin >> s1 >> s2;
+        mp.insert(make_pair(s1,s2));
     }
-
-    for(int i = 0; i < n; i++){
-        cin >> n_list[i];
-    }
-    cout << "Pares de m: " << endl;
-    for(int i = 0; i < m_list.size(); i++){
-        cout << "(" << m_list[i].first << ", " << m_list[i].second << ")" << endl;
-
-    }
-    cout << "n list: " <<endl;
-    for(const auto &word : n_list){
-        cout << word << endl;
+    int tam1,tam2;
+    while(n--){
+        cin >> s1;
+        string val1=mp[s1], val2=s1;
+        tam1 = val1.length();
+        tam2 = val2.length();
+        if(tam1 > tam2){
+            cout << val2 << " ";
+        }else if(tam1 == tam2) {
+            cout << val2 << " ";
+        }else{
+            cout << val1 << " ";
+        }
     }
 
     return 0;

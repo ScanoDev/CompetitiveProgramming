@@ -1,25 +1,48 @@
 #include <iostream>
+#include <deque>
 #include <utility>
 
 using namespace std;
 
-int main(){
-    int n, m, max=0, i=0;
-    pair<int,int>res(0,0);
+int main() {
+    int n, m, p = 0, res;
+    bool finish = false;
     cin >> n >> m;
-    while(n--){
-        i++;
+    deque<pair<int, int>> v;
+
+    // Ingresar los elementos en la deque
+    while (n--) {
+        p++;
         int a;
         cin >> a;
-        if(a >= max){
-            max = a;
-            res.first=a;
-            res.second = i;
-        }//(1,1), ()
+        v.push_back(make_pair(a, p)); 
     }
-    cout << res.second;
 
+    // Procesar los elementos
+    while (!finish) {
 
+        if (v.front().first > m) {
+            if (v.size() == 1) {
+                res = v.front().second;
+                finish = true;
+            } else {
+                v.front().first -= m;
+                pair<int, int> temp = v.front();
+                v.pop_front();
+                v.push_back(temp);
+            }
+        } else {
+            if (v.size() == 1) {
+                res = v.front().second;
+                finish = true;
+            } else {
+                // Eliminar el elemento del frente
+                v.pop_front();
+            }
+        }
+    }
+
+    cout << res << endl;
 
     return 0;
 }
