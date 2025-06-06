@@ -1,5 +1,5 @@
-// These problems generally require findin
-//maximum/minimum subarray, subtrings which satisfy
+// These problems generally require finding
+//maximum/minimum subarray, subtrings which satisfies
 //some specific condition
 
 
