@@ -31,8 +31,8 @@ int maxSum(vector<int>& arr, int n, int k){
 }
 
 int main(){
-    vector<int> arr = {1, 4, 2, 10, 23, 3, 1, 0, 20};
-    int k = 4;
+    vector<int> arr = {-1,-2,3,4};
+    int k = 3;
     int n = arr.size();
     
     cout << maxSum(arr, n, k);

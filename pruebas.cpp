@@ -1,16 +1,10 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 int main(){
     
-    cout << 'b'-'0';
+    int result = 5 ^ 0;
+    cout << result;
 
     return 0;
 }
-
-//bddaddddb
-//bdda -> p = addb
-//ddddb -> p = addbddddb
-
-// bddaddda
-// 
