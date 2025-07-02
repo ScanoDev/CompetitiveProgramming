@@ -1,10 +1,13 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main(){
     
-    int result = 5 ^ 0;
-    cout << result;
+    vector<int>v(2, 100);
+    
+    for(int c : v){
+        cout << c << " ";
+    }
 
     return 0;
 }
