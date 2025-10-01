@@ -3,11 +3,12 @@ using namespace std;
 
 int main(){
     
-    vector<int>v(2, 100);
-    
-    for(int c : v){
-        cout << c << " ";
+    string s = "holaa0";
+    string word ="";
+    for(char c : s){
+        word += c;
     }
+    cout << word;
 
     return 0;
 }

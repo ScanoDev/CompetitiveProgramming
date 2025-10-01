@@ -6,17 +6,15 @@ int main(){
     int t;
     cin >> t;
     while(t--){
-        int n;
-        cin >> n;
-        if(3*n%4 == 0){
-            cout << "Bob";
+        int a,b;
+        cin >> a >> b;
+        if(a> b){
+            cout << b <<" " << a;
         }else{
-            cout << "Alice";
+            cout << a << " " << b;
         }
         cout << endl;
     }
 
     return 0;
 }
-
-//
